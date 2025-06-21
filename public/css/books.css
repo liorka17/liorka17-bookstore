@@ -1,0 +1,98 @@
+.books-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+    gap: 12px;
+}
+
+.books-header h2 {
+    font-size: 2.1rem;
+    margin: 0;
+    color: var(--primary);
+}
+
+.books-header .btn {
+    background: var(--accent);
+    color: #fff;
+    border-radius: var(--radius);
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 1.05em;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.books-header .btn:hover {
+    background: #0097a7;
+}
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 28px;
+}
+
+.book-card {
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    justify-content: space-between;
+    transition: transform 0.18s;
+}
+
+.book-card:hover {
+    transform: translateY(-6px) scale(1.03);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+}
+
+.book-card h3 {
+    margin: 0 0 7px 0;
+    color: var(--primary);
+    font-size: 1.17em;
+}
+
+.book-card p {
+    margin: 4px 0;
+    color: #454567;
+    font-size: 1.03em;
+}
+
+.book-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.btn, button.btn {
+    border: none;
+    border-radius: var(--radius);
+    font-size: 1em;
+    padding: 8px 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.19s;
+}
+
+.edit-btn {
+    background: var(--accent);
+    color: #fff;
+}
+
+.edit-btn:hover {
+    background: #008ecc;
+}
+
+.delete-btn {
+    background: var(--danger);
+    color: #fff;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}

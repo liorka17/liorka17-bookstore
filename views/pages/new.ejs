@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>➕ הוסף ספר חדש</h2>
+    <form action="/books" method="POST" class="book-form">
+        <div>
+            <label for="title">כותר:</label>
+            <input type="text" name="title" id="title" required>
+        </div>
+        <div>
+            <label for="author">מחבר:</label>
+            <input type="text" name="author" id="author" required>
+        </div>
+        <div>
+            <label for="price">מחיר:</label>
+            <input type="number" name="price" id="price" step="0.01" required>
+        </div>
+        <div class="form-actions">
+            <button type="submit" class="btn edit-btn">💾 הוסף</button>
+            <a href="/" class="btn cancel-btn">🔙 חזרה</a>
+        </div>
+    </form>
+</div>

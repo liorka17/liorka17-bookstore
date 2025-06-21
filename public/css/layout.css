@@ -1,0 +1,39 @@
+.site-header {
+    background: var(--primary);
+    color: var(--white);
+    padding: 24px 0 10px 0;
+    margin-bottom: 36px;
+}
+
+.site-header h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.site-header nav {
+    margin-top: 14px;
+}
+
+.site-header a {
+    color: var(--white);
+    margin-left: 30px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.site-header a:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
+.site-footer {
+    background: var(--primary);
+    color: var(--white);
+    padding: 14px 0 12px 0;
+    text-align: center;
+    margin-top: 44px;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+}

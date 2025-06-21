@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %> | ספרים</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/layout.css">
+    <% if (typeof pageStyle !== 'undefined' && pageStyle) { %>
+        <link rel="stylesheet" href="/css/<%= pageStyle %>.css">
+    <% } %>
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <h1><a href="/">📚 ספריית ניהול</a></h1>
+            <nav class="site-nav">
+                <a href="/">דף הבית</a>
+                <a href="/books/new">➕ הוספת ספר</a>
+            </nav>
+        </div>
+    </header>
+    <main class="container">
+        <%- body %>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <p>📘 פותח על ידי ליאור © <%= new Date().getFullYear() %></p>
+        </div>
+    </footer>
+</body>
+</html>

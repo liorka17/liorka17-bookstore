@@ -1,0 +1,70 @@
+.book-form {
+    max-width: 520px;
+    margin: 52px auto;
+    padding: 34px 30px 22px 30px;
+    background: var(--white);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    font-family: var(--font);
+}
+
+.book-form label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 16px;
+    color: #30304b;
+}
+
+.book-form input {
+    padding: 14px 13px;
+    font-size: 15.5px;
+    border: 1px solid #ccd5df;
+    border-radius: 7px;
+    background-color: #fafbff;
+    transition: border-color 0.3s;
+}
+
+.book-form input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(0,188,212,0.12);
+    outline: none;
+}
+
+.form-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-end;
+    margin-top: 6px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--radius);
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.edit-btn {
+    background-color: var(--accent);
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #0097a7;
+}
+
+.cancel-btn {
+    background-color: #e0e0e0;
+    color: #333;
+    text-decoration: none;
+}
+
+.cancel-btn:hover {
+    background-color: #ccc;
+}

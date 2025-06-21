@@ -1,0 +1,24 @@
+<div class="books-header">
+    <h2>📚 כל הספרים</h2>
+    <a href="/books/new" class="btn">➕ הוסף ספר חדש</a>
+</div>
+<% if (error) { %>
+    <p class="error-message"><%= error %></p>
+<% } %>
+<div class="books-grid">
+    <% books.forEach(book => { %>
+        <div class="book-card">
+            <div>
+                <h3><%= book.title %></h3>
+                <p><strong>✍️ מחבר:</strong> <%= book.author %></p>
+                <p><strong>💰 מחיר:</strong> ₪<%= book.price %></p>
+            </div>
+            <div class="book-actions">
+                <a href="/books/<%= book._id %>/edit" class="btn edit-btn">✏️ עריכה</a>
+                <form action="/books/<%= book._id %>?_method=DELETE" method="POST" onsubmit="return confirm('למחוק את הספר?')">
+                    <button type="submit" class="btn delete-btn">🗑️ מחק</button>
+                </form>
+            </div>
+        </div>
+    <% }) %>
+</div>
