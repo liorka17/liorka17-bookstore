@@ -78,7 +78,7 @@ bookstore/
 When you start the Bookstore App, this is what happens step by step:
 
 1. **Server Startup & Middleware Loading**
-    - The main entry point is `server.js`, which imports the Express app from `app.js` and starts listening on the configured port (`3000` by default).
+    - The main entry point is `server.js`, which imports the Express app from `app.js` and starts listening on the configured port (`5000` by default).
     - In `app.js`, essential middlewares are set up:
         - **Body parsing** for handling POST requests and forms.
         - **Method override** for supporting PUT and DELETE HTTP methods via forms.
